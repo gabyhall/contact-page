@@ -1,38 +1,97 @@
-.App {
+body {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  background-color: #f7cac9;
+  font-family: 'Sofia Pro';
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+background: #034F84;
+position: absolute;
+width: 100%;
+height: 70px;
+left: 10px;
+top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.details {
+  position: absolute;
+  width: 293px;
+  height: 377px;
+  left: 1027px;
+  top: 494px;
+  background: #034F84;
+  border-radius: 5px;
+}
+
+
+.contact {
+position: absolute;
+width: 514px;
+height: 120px;
+left: 458px;
+top: 175px;
+background: #F7786B;
+border-radius: 5px;
+}
+
+.h1 {
+position: absolute;
+width: 139px;
+height: 50px;
+left: 653px;
+top: 234px;
+color: white;
+font-size: 36px;
+line-height: 42px;
+}
+
+.formContainer {
+position: absolute;
+width: 793px;
+height: 556px;
+left: 99px;
+top: 408px;
+background-color: #92a8d1;
+border-radius: 5px;
+}
+
+input {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  height: 25px;
+}
+
+.infoInput {
+  position: absolute;
+  left: 100px;
+  top: 75px;
+}
+
+.sendBtn {
+  background: #034F84;
+  border-radius: 5px;
+  height: 35px;
+  width: 60px;
+  position: absolute;
+  top: 300px;
+  left: 130px;
+}
+
+.sendBtn:hover {
+  background: #F7786B;
+}
+
+.message {
+position: absolute;
+left: 400px;
+top: 80px;
+} 
+
+
+.messageInput {
+  position: absolute;
+  height: 200px;
+  width: 250px;
 }
