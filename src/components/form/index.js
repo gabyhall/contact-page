@@ -6,6 +6,15 @@ export const Form = () => {
     const [email, setEmail] = useState();
     const [subject, setSubject] = useState();
     const [message, setMessage] = useState();
+    const [show, setShow] = useState(false);
+  
+const Message = () => {
+    return (
+        <div className="showMessage" style={show ? {} : {display: 'none'}}>
+        <h2>Thank you for your message. We will get back to you soon.</h2>
+        </div>
+    )
+}
 
     return(
         <div >
@@ -17,7 +26,7 @@ export const Form = () => {
             placeholder="First Name"/>
             <p>Last Name</p>
             <input 
-           onChange={(e) => setLastName(e.target.value)}
+            onChange={(e) => setLastName(e.target.value)}
             placeholder="Last Name"/>
             <p>Email</p>
             <input 
@@ -34,18 +43,23 @@ export const Form = () => {
             onChange={(e) => setMessage(e.target.value)}
             placeholder="Message"/>
             <button className="sendBtn"
-            onClick = {(e) => {setFirstName(firstName);
+            onClick = {(e) => {
+            e.preventDefault();
+            setFirstName(firstName);
             setLastName(lastName);
             setEmail(email);
             setSubject(subject);
             setMessage(message);
+            setShow(true);
             console.log(firstName);
             console.log(lastName)
             console.log(email);
             console.log(subject);
             console.log(message);
+            console.log(show);
             }}
             >Send</button>
+            <Message />
             </div>
         </form>
         </div>
