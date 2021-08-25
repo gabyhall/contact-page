@@ -56,7 +56,6 @@ const Message = () => {
             console.log(email);
             console.log(subject);
             console.log(message);
-            console.log(show);
             }}
             >Send</button>
             <Message />
