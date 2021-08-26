@@ -11,15 +11,15 @@ function App() {
       <Contact />
       <Form />
       <div className="details">
-        <h3>Details</h3>
-        <p>43 Bridgewater Street</p>
+        <h3>Contact Us At:</h3>
+        <p>1 Liverpool Street</p>
         <p>Liverpool</p>
         <p>Merseyside</p>
-        <p>L1 0AR</p>
+        <p>L1 0AB</p>
         <br></br>
-        <p>0151 305 7376</p>
+        <p>0151 123 4567</p>
         <br></br>
-        <p>contact@atrafloor.com</p>
+        <p>hello@contact.com</p>
       </div>
     </div>
   );
